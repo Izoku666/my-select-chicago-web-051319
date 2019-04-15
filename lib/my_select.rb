@@ -7,6 +7,7 @@ def my_select(collection)
     a =  yield(collection[i])
     if a == true
       arr.push(a)
+    end
     i += 1
   end
   return arr
