@@ -6,7 +6,7 @@ def my_select(collection)
     #arr << yield(collection.call(i))
     a =  yield(collection[i])
     if a == true
-      arr.push(a)
+      arr.push(collection[i])
     end
     i += 1
   end
