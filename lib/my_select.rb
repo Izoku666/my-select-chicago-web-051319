@@ -5,7 +5,8 @@ def my_select(collection)
     #yield collection[i]
     #arr << yield(collection[i])
     #arr << yield(collection[i])
-    arr << yield(collection.call[i])
+    #arr << yield(collection.call[i])
+    arr << yield(collection.call(i))
     i += 1
   end
   return arr
